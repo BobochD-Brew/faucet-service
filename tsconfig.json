@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "target": "es5",                          // JavaScript version to compile to (ES5, ES6, etc.)
+      "target": "es2020",                          // JavaScript version to compile to (ES5, ES6, etc.)
       "module": "commonjs",                     // Module system (CommonJS for Node.js, or ES6 for modern JS)
       "outDir": "./dist",                       // Output directory for compiled JS files
       "rootDir": "./src",                       // Source directory for TypeScript files
