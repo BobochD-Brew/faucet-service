@@ -1,10 +1,10 @@
-import { AlchemyProvider, parseEther, Wallet } from 'ethers';
+import { AlchemyProvider, JsonRpcProvider, parseEther, Wallet } from 'ethers';
 import Fastify from 'fastify';
 import dotenv from 'dotenv';
 import cors from '@fastify/cors';
 dotenv.config()
 
-const provider = new AlchemyProvider(+process.env.CHAIN_ID!, process.env.ALCHEMY_KEY!);
+const provider = new JsonRpcProvider(process.env.RPC_URL!, +process.env.CHAIN_ID!);
 const wallet = new Wallet(process.env.PRIVATE_KEY!, provider);
 const server = Fastify({ logger: true })
 
